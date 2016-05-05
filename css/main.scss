@@ -1,0 +1,171 @@
+@import url(https://fonts.googleapis.com/css?family=Average);
+@import url(https://fonts.googleapis.com/css?family=Atomic+Age);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+// colors
+$bg-primary: #4D8795;
+$bg-section: #EDE8D5;
+$indianred:  #c74341;
+// textures
+$bg-texture-primary: url("../img/always-grey.png");
+$bg-texture-odd:     url("../img/rice-paper.png");
+$bg-texture-even:    url("../img/skulls.png");
+//fonts
+$title-font: 'Atomic Age', cursive;
+$text-font:  'Average', serif;
+$nav-font:   'Oswald', sans-serif;
+
+body {
+  font-family: $title-font;
+  font-size: 2em;
+  background-color: $bg-primary;
+  background-image: $bg-texture-primary;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+section {
+  height: 1000px;
+  position: relative;
+  margin: auto !important;
+  left: 7%;
+  width: 85%;
+  display: inline-block;
+  padding: 30px;
+  padding-top: 60px;
+  text-align: center;
+  img {
+    margin-top: 15px;
+  }
+}
+
+#projects {
+  height: 1500px;
+  p {
+    text-align: justify;
+  }
+}
+
+footer {
+  color: white;
+  text-align: center;
+  a {
+    color: #a8c8ca;
+    text-decoration: underline;
+  }
+}
+
+p {
+  font-family: $text-font;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  color: $indianred;
+}
+
+h3 {
+  color: $bg-primary;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+.fa-star {
+  color: white;
+}
+
+#about {
+  background-color: $bg-section;
+  background-image: $bg-texture-odd;
+}
+
+#skills {
+  background-color: $bg-section;
+  background-image: $bg-texture-even;
+}
+
+#projects {
+  background-color: $bg-section;
+  background-image: $bg-texture-odd;
+}
+
+#contact {
+  background-color: $bg-section;
+  background-image: $bg-texture-even;
+}
+
+
+.icons {
+  font-size: 44px;
+  padding: 10px;
+}
+
+.nav-modifications {
+  padding: 15px;
+  left: 7%;
+  width: 85%;
+  height: 60px;
+  display: inline-block;
+  text-align: center;
+  background-color: $indianred !important;
+  li {
+    margin: 0;
+    line-height: 1;
+    padding: 0;
+    display: inline;
+    position: relative;
+    margin: 0 0px;
+  }
+  a {
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+
+    font-family: $nav-font;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 2px rgba(0, 0, 0, .2);
+
+    -webkit-transition: color .3s linear;
+    -moz-transition: color .3s linear;
+    -o-transition: color .3s linear;
+    -ms-transition: color .3s linear;
+    transition: color .3s linear;
+  }
+
+  a:hover {
+    color: #eae8a5;
+  }
+}
+
+nav {
+  background-image: $bg-texture-even;
+}
+nav::after, nav::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6px;
+  height: 0px;
+  width: 0px;
+  border: 28px solid $indianred;
+  z-index: -1;
+}
+
+/* The left ribbon */
+nav::before {
+  border-left-color: transparent;
+  left: -30px;
+}
+
+/* The right ribbon */
+nav::after {
+  border-right-color: transparent;
+  right: -30px;
+}

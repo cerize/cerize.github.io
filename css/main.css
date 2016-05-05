@@ -1,22 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Average);
+@import url(https://fonts.googleapis.com/css?family=Atomic+Age);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+body {
+  font-family: "Atomic Age", cursive;
+  font-size: 2em;
+  background-color: #4D8795;
+  background-image: url("../img/always-grey.png");
+  padding-top: 50px;
+  padding-bottom: 20px; }
 
+section {
+  height: 1000px;
+  position: relative;
+  margin: auto !important;
+  left: 7%;
+  width: 85%;
+  display: inline-block;
+  padding: 30px;
+  padding-top: 60px;
+  text-align: center; }
+  section img {
+    margin-top: 15px; }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+#projects {
+  height: 1500px; }
+  #projects p {
+    text-align: justify; }
 
+footer {
+  color: white;
+  text-align: center; }
+  footer a {
+    color: #a8c8ca;
+    text-decoration: underline; }
 
+p {
+  font-family: "Average", serif; }
 
+h1 {
+  text-align: center;
+  font-size: 3em;
+  color: #c74341; }
 
+h3 {
+  color: #4D8795; }
 
+li {
+  list-style: none;
+  display: inline-block; }
 
+.fa-star {
+  color: white; }
 
+#about {
+  background-color: #EDE8D5;
+  background-image: url("../img/rice-paper.png"); }
 
+#skills {
+  background-color: #EDE8D5;
+  background-image: url("../img/skulls.png"); }
 
+#projects {
+  background-color: #EDE8D5;
+  background-image: url("../img/rice-paper.png"); }
 
+#contact {
+  background-color: #EDE8D5;
+  background-image: url("../img/skulls.png"); }
 
+.icons {
+  font-size: 44px;
+  padding: 10px; }
 
+.nav-modifications {
+  padding: 15px;
+  left: 7%;
+  width: 85%;
+  height: 60px;
+  display: inline-block;
+  text-align: center;
+  background-color: #c74341 !important; }
+  .nav-modifications li {
+    margin: 0;
+    line-height: 1;
+    padding: 0;
+    display: inline;
+    position: relative;
+    margin: 0 0px; }
+  .nav-modifications a {
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+    -webkit-transition: color .3s linear;
+    -moz-transition: color .3s linear;
+    -o-transition: color .3s linear;
+    -ms-transition: color .3s linear;
+    transition: color .3s linear; }
+  .nav-modifications a:hover {
+    color: #eae8a5; }
 
+nav {
+  background-image: url("../img/skulls.png"); }
 
+nav::after, nav::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6px;
+  height: 0px;
+  width: 0px;
+  border: 28px solid #c74341;
+  z-index: -1; }
 
+/* The left ribbon */
+nav::before {
+  border-left-color: transparent;
+  left: -30px; }
 
+/* The right ribbon */
+nav::after {
+  border-right-color: transparent;
+  right: -30px; }
 
+/*# sourceMappingURL=main.css.map */
