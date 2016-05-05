@@ -1,71 +1,69 @@
 @import url(https://fonts.googleapis.com/css?family=Average);
-@import url(https://fonts.googleapis.com/css?family=Atomic+Age);
 @import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=IM+Fell+English+SC);
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 body {
-  font-family: "Atomic Age", cursive;
-  font-size: 2em;
-  background-color: #4D8795;
-  background-image: url("../img/always-grey.png");
+  font-family: "IM Fell English SC", serif;
+  font-size: 18px;
+  line-height: 1.8em;
+  background-color: #f8df36;
   padding-top: 50px;
   padding-bottom: 20px; }
+
+p {
+  font-family: "Average", serif;
+  font-size: 18px; }
+
+.collapse {
+  background-color: #f8df36;
+  background-image: url("../img/rice-paper.png"); }
 
 section {
   height: 1000px;
   position: relative;
   margin: auto !important;
-  left: 7%;
-  width: 85%;
-  display: inline-block;
   padding: 30px;
   padding-top: 60px;
   text-align: center; }
-  section img {
-    margin-top: 15px; }
+
+#about p {
+  margin-top: 30px; }
 
 #projects {
-  height: 1500px; }
+  height: 2000px; }
   #projects p {
     text-align: justify; }
 
 footer {
-  color: white;
+  color: #2A7D7D;
   text-align: center; }
   footer a {
-    color: #a8c8ca;
+    color: #6fb7b6;
     text-decoration: underline; }
-
-p {
-  font-family: "Average", serif; }
 
 h1 {
   text-align: center;
-  font-size: 3em;
-  color: #c74341; }
+  color: #2A7D7D; }
 
 h3 {
-  color: #4D8795; }
+  color: #2A7D7D; }
 
 li {
   list-style: none;
   display: inline-block; }
 
-.fa-star {
-  color: white; }
-
 #about {
-  background-color: #EDE8D5;
   background-image: url("../img/rice-paper.png"); }
 
 #skills {
-  background-color: #EDE8D5;
   background-image: url("../img/skulls.png"); }
+  #skills div {
+    display: inline-block; }
 
 #projects {
-  background-color: #EDE8D5;
   background-image: url("../img/rice-paper.png"); }
 
 #contact {
-  background-color: #EDE8D5;
   background-image: url("../img/skulls.png"); }
 
 .icons {
@@ -74,12 +72,8 @@ li {
 
 .nav-modifications {
   padding: 15px;
-  left: 7%;
-  width: 85%;
-  height: 60px;
   display: inline-block;
-  text-align: center;
-  background-color: #c74341 !important; }
+  background-color: #f8df36 !important; }
   .nav-modifications li {
     margin: 0;
     line-height: 1;
@@ -95,7 +89,6 @@ li {
     font-size: 16px;
     text-transform: uppercase;
     text-decoration: none;
-    color: white;
     text-shadow: 1px 2px rgba(0, 0, 0, 0.2);
     -webkit-transition: color .3s linear;
     -moz-transition: color .3s linear;
@@ -106,26 +99,6 @@ li {
     color: #eae8a5; }
 
 nav {
-  background-image: url("../img/skulls.png"); }
-
-nav::after, nav::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 6px;
-  height: 0px;
-  width: 0px;
-  border: 28px solid #c74341;
-  z-index: -1; }
-
-/* The left ribbon */
-nav::before {
-  border-left-color: transparent;
-  left: -30px; }
-
-/* The right ribbon */
-nav::after {
-  border-right-color: transparent;
-  right: -30px; }
+  background-image: url("../img/rice-paper.png"); }
 
 /*# sourceMappingURL=main.css.map */

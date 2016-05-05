@@ -28,10 +28,10 @@
   <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
   <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="manifest" href="/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -42,35 +42,57 @@
   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-    <section id="about">
-      <nav class="anavbar anavbar-default navbar-fixed-top nav-modifications" role="navigation">
-        <li><a href="#about">About</a></li>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <li><a href="#skills">Skills</a></li>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <li><a href="#projects">Projects</a></li>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-      <h1>CERIZE SANTOS</h1>
-      <h3>FULL STACK WEB DEVELOPER</h3>
-      <p>
-        <strong>Passionate about coding</strong>.
+  <nav class="navbar navbar-default navbar-fixed-top nav-modifications" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-        My interest in Computer Science emerged during my graduate studies at <strong>University of Victoria</strong>, Canada, where I attended a course of Python applied to the automation of analysis. At the Faculdade de Tecnologia de São Paulo I studied <strong>fundamentals of Computer Science</strong>.
+  <section id="about">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6">
+        <p>
+          <img class="img-responsive center-block" src="img/banner.png" alt="" />
+        </p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6">
+        <p id="about-me">
+          <strong>Passionate about coding</strong>.
 
-        I attended the <strong>CodeCore Web Development bootcamp</strong>, in Vancouver. I am able to build web applications using Ruby on Rails, Javascript, Node.js, React, HTML5, CSS and APIs. As a BS in Chemistry and Master of Science, I also have a <strong>solid scientific background</strong>.
-      </p>
-      <img class="img-responsive center-block" src="img/hamster.png" alt="" />
+          My interest in Computer Science emerged during my graduate studies at <strong>University of Victoria</strong>, Canada, where I attended a course of Python applied to the automation of analysis. At the Faculdade de Tecnologia de São Paulo I studied <strong>fundamentals of Computer Science</strong>.
+
+          I attended the <strong>CodeCore Web Development bootcamp</strong>, in Vancouver. I am able to build web applications using Ruby on Rails, Javascript, Node.js, React, HTML5, CSS and APIs. As a BS in Chemistry and Master of Science, I also have a <strong>solid scientific background</strong>.
+        </p>
+        <p>
+          I am based in <strong>beautiful Vancouver</strong>, Canada.
+        </p>
+      </div>
+    </div>
   </section>
 
 
   <section id="skills">
     <h1>Skills</h1>
     <h3>Programming</h3>
-    <i class="devicon-ruby-plain-wordmark icons"></i>
+
+     <i class="devicon-ruby-plain-wordmark icons"></i>
+
     <i class="devicon-python-plain-wordmark icons"></i>
+    <div></div>
     <i class="devicon-c-plain-wordmark icons"></i>
     <i class="devicon-javascript-plain icons"></i>
     <i class="devicon-d3js-plain icons"></i>
@@ -89,20 +111,18 @@
     <i class="devicon-sass-plain icons"></i>
     <span>Express</span>
     <h3>Other Things I Like</h3>
-    <p>
-      <i class="devicon-linux-plain icons"></i>
-      <i class="fa fa-recycle" aria-hidden="true"></i><span> Test Driven Development</span>&nbsp
-      <i class="fa fa-bank" aria-hidden="true"></i><span> Lean Methodology</span>&nbsp
-      <i class="fa fa-database" aria-hidden="true"></i><span> Database Design</span>&nbsp
-      <i class="fa fa-gears" aria-hidden="true"></i><span> Bash Scripting</span>&nbsp
-      <i class="fa fa-bar-chart" aria-hidden="true"></i><span> Data Visualization</span>&nbsp
-      <i class="fa fa-coffee" aria-hidden="true"></i><span> Coffee</span>&nbsp
-      <i class="fa fa-github-alt" aria-hidden="true"></i><span> Cats</span>
-      <br>
-      <br>
-      <br>
-      <img class="img-responsive center-block" src="img/cats.png" alt="" />
-    </p>
+    <i class="devicon-linux-plain icons"></i>
+    <div><i class="fa fa-recycle" aria-hidden="true"></i> Test Driven Development&nbsp</div>
+    <div><i class="fa fa-bank" aria-hidden="true"></i> Lean Methodology&nbsp</div>
+    <div><i class="fa fa-database" aria-hidden="true"></i> Database Design&nbsp</div>
+    <div><i class="fa fa-gears" aria-hidden="true"></i> Bash Scripting&nbsp</div>
+    <div><i class="fa fa-bar-chart" aria-hidden="true"></i> Data Visualization&nbsp</div>
+    <div><i class="fa fa-coffee" aria-hidden="true"></i> Coffee&nbsp</div>
+    <div><i class="fa fa-github-alt" aria-hidden="true"></i> Cats</div>
+    <br>
+    <br>
+    <br>
+    <img class="img-responsive center-block" src="img/cats.png" alt="" />
   </section>
 
   <section id="projects">
@@ -141,6 +161,14 @@
         <br>
         <a href="https://github.com/zibs/codecore">github here</a>
       </div>
+      <div class="col-md-4">
+        <h3>this.Portifolio</h3>
+        <img src="img/genet.png" alt="" />
+        <p>
+          I created this Portifolio from scratch, using <strong>HTML5 boilerplate, Bootstrap, CSS3, GIMP (for image manipulation) and SASS</strong>.
+        </p>
+        <a href="https://github.com/cerize/cerize.github.io">github here</a>
+      </div>
     </div>
   </section>
 
@@ -148,7 +176,7 @@
     <h1>Contact</h1>
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-6">
-        <img class="img-responsive inline-block" src="img/ask_questions.jpg" alt="" />
+        <img class="img-responsive inline-block" src="img/hamster.png" alt="" />
       </div>
       <div class="col-xs-12 col-sm-6 col-md-6">
         <br>

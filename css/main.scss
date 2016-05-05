@@ -1,72 +1,76 @@
 @import url(https://fonts.googleapis.com/css?family=Average);
-@import url(https://fonts.googleapis.com/css?family=Atomic+Age);
 @import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=IM+Fell+English+SC);
 
 // colors
-$bg-primary: #4D8795;
-$bg-section: #EDE8D5;
-$indianred:  #c74341;
+$bg-primary: #f8df36;
+$darkblue:   #2A7D7D;
 // textures
-$bg-texture-primary: url("../img/always-grey.png");
 $bg-texture-odd:     url("../img/rice-paper.png");
 $bg-texture-even:    url("../img/skulls.png");
+$bg-navbar:          url("../img/rice-paper.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 //fonts
-$title-font: 'Atomic Age', cursive;
+$title-font: 'IM Fell English SC', serif;
 $text-font:  'Average', serif;
 $nav-font:   'Oswald', sans-serif;
 
 body {
   font-family: $title-font;
-  font-size: 2em;
+  font-size: 18px;
+  line-height: 1.8em;
   background-color: $bg-primary;
-  background-image: $bg-texture-primary;
   padding-top: 50px;
   padding-bottom: 20px;
+}
+
+p {
+  font-family: $text-font;
+  font-size: 18px;
+}
+
+.collapse {
+     background-color: $bg-primary;
+     background-image: $bg-texture-odd;
 }
 
 section {
   height: 1000px;
   position: relative;
   margin: auto !important;
-  left: 7%;
-  width: 85%;
-  display: inline-block;
   padding: 30px;
   padding-top: 60px;
   text-align: center;
-  img {
-    margin-top: 15px;
-  }
 }
 
+#about {
+  p {
+    margin-top: 30px;
+  }
+}
 #projects {
-  height: 1500px;
+  height: 2000px;
   p {
     text-align: justify;
   }
 }
 
 footer {
-  color: white;
+  color: #2A7D7D;
   text-align: center;
   a {
-    color: #a8c8ca;
+    color: #6fb7b6;
     text-decoration: underline;
   }
 }
 
-p {
-  font-family: $text-font;
-}
-
 h1 {
   text-align: center;
-  font-size: 3em;
-  color: $indianred;
+  color: $darkblue;
 }
 
 h3 {
-  color: $bg-primary;
+  color: $darkblue;
 }
 
 li {
@@ -74,30 +78,25 @@ li {
   display: inline-block;
 }
 
-.fa-star {
-  color: white;
-}
 
 #about {
-  background-color: $bg-section;
   background-image: $bg-texture-odd;
 }
 
 #skills {
-  background-color: $bg-section;
   background-image: $bg-texture-even;
+  div {
+    display: inline-block;
+  }
 }
 
 #projects {
-  background-color: $bg-section;
   background-image: $bg-texture-odd;
 }
 
 #contact {
-  background-color: $bg-section;
   background-image: $bg-texture-even;
 }
-
 
 .icons {
   font-size: 44px;
@@ -106,12 +105,8 @@ li {
 
 .nav-modifications {
   padding: 15px;
-  left: 7%;
-  width: 85%;
-  height: 60px;
   display: inline-block;
-  text-align: center;
-  background-color: $indianred !important;
+  background-color: $bg-primary !important;
   li {
     margin: 0;
     line-height: 1;
@@ -129,7 +124,6 @@ li {
     font-size: 16px;
     text-transform: uppercase;
     text-decoration: none;
-    color: white;
     text-shadow: 1px 2px rgba(0, 0, 0, .2);
 
     -webkit-transition: color .3s linear;
@@ -145,27 +139,5 @@ li {
 }
 
 nav {
-  background-image: $bg-texture-even;
-}
-nav::after, nav::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 6px;
-  height: 0px;
-  width: 0px;
-  border: 28px solid $indianred;
-  z-index: -1;
-}
-
-/* The left ribbon */
-nav::before {
-  border-left-color: transparent;
-  left: -30px;
-}
-
-/* The right ribbon */
-nav::after {
-  border-right-color: transparent;
-  right: -30px;
+  background-image: $bg-navbar;
 }
