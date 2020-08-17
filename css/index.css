@@ -120,6 +120,7 @@ Info Box
 
 .info-close-btn {
   cursor: pointer;
+  font-size: 22px;
 }
 
 .info i {
