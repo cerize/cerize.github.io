@@ -1,22 +1,28 @@
-@import url(https://fonts.googleapis.com/css?family=Average);
-@import url(https://fonts.googleapis.com/css?family=Oswald);
-@import url(https://fonts.googleapis.com/css?family=IM+Fell+English+SC);
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+@font-face {
+  font-family: Mallanna;
+  src: url(fonts/Mallanna-Regular.ttf);
+}
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url(fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: IMFellEnglish-Regular;
+  src: url(fonts/IMFellEnglish-Regular.ttf);
+}
+
+
+
 body {
-  font-family: "IM Fell English SC", serif;
-  font-size: 18px;
-  line-height: 1.8em;
-  background-color: #f8df36;
+  font-family: OpenSans-Regular;
+  font-size: 2vw;
+  background-color: #f8f7f3;
   padding-top: 50px;
   padding-bottom: 20px; }
 
-p {
-  font-family: "Average", serif;
-  font-size: 18px; }
 
-.collapse {
-  background-color: #f8df36;
-  background-image: url("../img/rice-paper.png"); }
+
 
 section {
   height: 1000px;
@@ -42,8 +48,9 @@ footer {
     text-decoration: underline; }
 
 h1 {
-  text-align: center;
-  color: #2A7D7D; }
+  font-family: IMFellEnglish-Regular;
+  font-size: 8vw;
+  text-align: center;}
 
 h3 {
   color: #2A7D7D; }
@@ -52,19 +59,10 @@ li {
   list-style: none;
   display: inline-block; }
 
-#about {
-  background-image: url("../img/rice-paper.png"); }
 
-#skills {
-  background-image: url("../img/skulls.png"); }
-  #skills div {
-    display: inline-block; }
+#skills div {
+  display: inline-block; }
 
-#projects {
-  background-image: url("../img/rice-paper.png"); }
-
-#contact {
-  background-image: url("../img/skulls.png"); }
 
 .icons {
   font-size: 44px;
@@ -72,8 +70,7 @@ li {
 
 .nav-modifications {
   padding: 15px;
-  display: inline-block;
-  background-color: #f8df36 !important; }
+  display: inline-block;}
   .nav-modifications li {
     margin: 0;
     line-height: 1;
@@ -98,7 +95,7 @@ li {
   .nav-modifications a:hover {
     color: #eae8a5; }
 
-nav {
-  background-image: url("../img/rice-paper.png"); }
+/* nav {
+  background-image: url("../img/rice-paper.png"); } */
 
 /*# sourceMappingURL=main.css.map */
