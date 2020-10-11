@@ -19,7 +19,7 @@ const updateTimeFn = setInterval(function() {
 
   // If the count down is finished, write some text
   if (timeRemaining < 0) {
-    clearInterval(x);
+    clearInterval(updateTimeFn);
     document.getElementById("art-coming-soon").innerHTML = "";
   }
 }, 1000);
